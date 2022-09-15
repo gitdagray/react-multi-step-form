@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* || UTILITY CLASSES */
+
+.remove-button {
+  display: none;
+}
+
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.split-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.flex-col {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.35rem;
+  width: 100%;
+}
+
+input:invalid {
+  outline: 2px solid red;
+  background-color: rgb(255, 255, 139);
+}
+
+
+/* || GENERAL STYLES */
+
+body {
+  font-family: 'Nunito', sans-serif;
+  min-height: 100vh;
+  background: radial-gradient(skyblue, darkblue);
+  padding: 1rem;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+#root {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+}
+
+.progress-container {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 1rem;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
+
+.barmarker-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+.barmarker {
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.barmarker:is(:not(:last-child)) {
+  border-right: 1px solid #000;
+}
+
+.progress {
+  width: 100%;
+  height: 24px;
+}
+
+.form {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 0.75rem;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
+
+.form-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-container {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+}
+
+.button {
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.button:focus {
+  outline: 2px solid gold;
+}
+
+input,
+select {
+  padding: 0.5rem;
+  border-radius: 10px;
+  width: 100%;
+}
+
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin-right: 0.5rem;
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 1rem;
+}
