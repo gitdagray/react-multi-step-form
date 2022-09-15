@@ -23,7 +23,7 @@
 
 ### Description
 
-📺 [YouTube Video]() for this repository.
+📺 [YouTube Video](https://youtu.be/QSBc8bABwE0) for this repository.
 
 ---
 
